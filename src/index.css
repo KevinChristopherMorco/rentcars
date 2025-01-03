@@ -14,3 +14,14 @@
   --secondary-color: #ecf5ff;
   --background-color: #ffffff;
 }
+
+@layer base {
+  html,
+  body {
+    @apply h-screen;
+  }
+
+  #root {
+    @apply flex min-h-full flex-col;
+  }
+}

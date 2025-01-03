@@ -1,11 +1,13 @@
 import React from "react";
-import Header from "../components/Header";
+import Hero from "../components/home/Hero";
+import Steps from "../components/home/Steps";
 
 const Home = () => {
   return (
-    <div>
-      <Header />
-    </div>
+    <>
+      <Hero />
+      <Steps />
+    </>
   );
 };
 
