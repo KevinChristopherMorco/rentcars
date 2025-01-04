@@ -13,6 +13,7 @@
   --primary-color: #1572d3;
   --secondary-color: #ecf5ff;
   --background-color: #ffffff;
+  --primary-hover-color: #3c94ec;
 }
 
 @layer base {
@@ -22,6 +23,6 @@
   }
 
   #root {
-    @apply flex min-h-full flex-col;
+    @apply flex min-h-full flex-col overflow-x-hidden;
   }
 }

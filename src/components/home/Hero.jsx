@@ -10,75 +10,81 @@ import location from "../../assets/location.png";
 
 const Hero = () => {
   return (
-    <section className="h-full grid gap-12 relative md:grid-cols-2 md:items-center md:gap-y-0 xl:items-start ">
-      <div className="flex flex-col gap-8 xl:w-[80%] xl:my-14">
-        <div className="flex flex-col gap-6">
+    <section className="relative grid h-full gap-12 md:grid-cols-2 md:items-center md:gap-y-0 xl:items-start">
+      <div className="flex flex-col gap-8 xl:my-14 xl:w-[80%] 2xl:w-[80%]">
+        <div className="flex flex-col gap-6 lg:gap-8">
           <div className="flex flex-col gap-6">
-            <h4 className="text-4xl font-semibold xl:text-5xl">
+            <h4 className="text-4xl font-semibold xl:text-5xl 2xl:text-6xl">
               Find, book and rent a car{" "}
-              <span className="text-[var(--primary-color)] relative inline-block">
+              <span className="relative inline-block text-[var(--primary-color)]">
                 Easily
                 <img
                   src={line}
                   alt=""
-                  className="absolute top-full left-0 mt-2"
+                  className="absolute left-0 top-full mt-2"
                 />
               </span>
             </h4>
 
-            <p className="text-gray-500">
+            <p className="text-gray-800 2xl:text-xl">
               Get a car wherever and whenever you need it with your IOS and
               Android device.
             </p>
           </div>
           <div className="flex items-center gap-4">
             <a href="">
-              <img src={play} alt="" />
+              <img src={play} alt="" className="2xl:w-[12rem]" />
             </a>
             <a href="">
-              <img src={store} alt="" />
+              <img src={store} alt="" className="2xl:w-[12rem]" />
             </a>
           </div>
         </div>
       </div>
-      <div className="flex flex-col gap-5 md:row-start-2 md:flex-row md:col-span-2 lg:gap-x-8 md:shadow-lg md:p-5 md:mx-auto md:w-fit lg:w-full lg:justify-between">
-        <div className="flex flex-col gap-4 md:gap-x-2 md:flex-row lg:justify-between lg:w-[70%]">
+      <div className="flex flex-col gap-5 md:col-span-2 md:row-start-2 md:mx-auto md:w-fit md:flex-row md:p-5 md:shadow-lg lg:w-full lg:justify-between lg:gap-x-8">
+        <div className="flex flex-col gap-4 md:flex-row md:gap-x-2 lg:w-[70%] lg:justify-between 2xl:w-[75%]">
           <div className="flex items-center gap-4">
-            <img src={location} alt="" className="w-8 h-8" />
+            <img src={location} alt="" className="h-8 w-8" />
             <div className="flex flex-col">
-              <p className="font-semibold">Location</p>
-              <p className="text-sm text-gray-500">Search your location</p>
+              <p className="font-medium 2xl:text-xl">Location</p>
+              <p className="text-sm text-gray-500 2xl:text-base">
+                Search your location
+              </p>
             </div>
           </div>
           <div className="flex items-center gap-4">
-            <img src={calendar} alt="" className="w-8 h-8" />
+            <img src={calendar} alt="" className="h-8 w-8" />
             <div className="flex flex-col">
-              <p className="font-semibold">Pickup date</p>
-              <p className="text-sm text-gray-500">Choose an available date</p>
+              <p className="font-medium 2xl:text-xl">Pickup date</p>
+              <p className="text-sm text-gray-500 2xl:text-base">
+                Choose an available date
+              </p>
             </div>
           </div>
           <div className="flex items-center gap-4">
-            <img src={calendar} alt="" className="w-8 h-8" />
+            <img src={calendar} alt="" className="h-8 w-8" />
             <div className="flex flex-col">
-              <p className="font-semibold">Return date</p>
-              <p className="text-sm text-gray-500">Choose a return date</p>
+              <p className="font-medium 2xl:text-xl">Return date</p>
+              <p className="text-sm text-gray-500 2xl:text-base">
+                Choose a return date
+              </p>
             </div>
           </div>
         </div>
-        <button className="cursor-pointer bg-[var(--primary-color)] p-2 rounded-lg text-white font-medium md:px-10 md:py-1">
+        <button className="cursor-pointer rounded-lg bg-[var(--primary-color)] p-2 font-medium text-white transition-colors hover:bg-[--primary-hover-color] md:px-10 md:py-1 2xl:text-lg">
           Search
         </button>
       </div>
-      <div className="-mx-5 relative flex flex-col md:justify-center md:items-center lg:-mr-28">
+      <div className="relative -mx-5 flex flex-col md:items-center md:justify-center lg:-mr-20 2xl:-mr-72">
         <img
           src={frame}
           alt=""
-          className="h-[350px] w-[90%] absolute top-0 md:top-[10%] right-0 md:h-[400px] md:w-[85%]"
+          className="absolute right-0 top-0 h-[350px] w-[90%] md:top-[10%] md:h-[400px] md:w-[85%]"
         />
         <img
           src={car}
           alt=""
-          className="my-14 z-[10] w-full md:h-[300px] xl:h-[450px]"
+          className="z-[10] my-14 w-full md:h-[300px] xl:h-[450px] 2xl:h-[550px]"
         />
       </div>
     </section>
