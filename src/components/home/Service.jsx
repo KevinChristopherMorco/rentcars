@@ -5,11 +5,18 @@ import wallet from "../../assets/wallet.png";
 import usertick from "../../assets/user-tick.png";
 import support from "../../assets/24-support.png";
 import messages from "../../assets/messages-2.png";
+import audi from "../../assets/cars/audi-r8.png";
 
 const Service = () => {
   return (
     <section className="grid lg:grid-cols-2">
-      <div>Picture</div>
+      <div className="relative md:justify-items-center lg:justify-items-start lg:self-center">
+        <img
+          src={audi}
+          alt=""
+          className="top-[50%] w-[70%] md:h-[300px] lg:absolute lg:-left-32 lg:w-full lg:-translate-y-[50%] xl:-left-48 2xl:-left-72 2xl:h-[450px] 2xl:w-[2000px]"
+        />
+      </div>
       <div className="flex flex-col items-center gap-8">
         <div className="w-fit rounded-md bg-[var(--secondary-color)] px-8 py-2">
           <h4 className="font-medium uppercase text-[var(--primary-color)] md:text-lg 2xl:text-xl">

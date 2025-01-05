@@ -7,8 +7,18 @@ import jaguar from "../../assets/cars/jaguar-xe.png";
 
 const FeaturedCars = () => {
   return (
-    <section>
-      <div className="flex flex-col gap-10 md:grid md:grid-cols-2 md:gap-20 lg:grid-cols-3 lg:gap-10 xl:grid-cols-4">
+    <section className="flex flex-col gap-16">
+      <div className="flex flex-col items-center gap-8">
+        <div className="w-fit rounded-md bg-[var(--secondary-color)] px-8 py-2">
+          <h4 className="font-medium uppercase text-[var(--primary-color)] md:text-lg 2xl:text-xl">
+            POPULAR RENTAL DEALS
+          </h4>
+        </div>
+        <h4 className="text-center text-3xl font-medium text-gray-800 2xl:text-4xl">
+          Most popular cars rental deals
+        </h4>
+      </div>
+      <div className="flex flex-col gap-10 md:grid md:grid-cols-2 md:gap-20 lg:grid-cols-3 lg:gap-10 xl:grid-cols-4 xl:gap-4 2xl:gap-10">
         <FeaturedCard
           model={"Jaguar XE L P250"}
           carImage={jaguar}
@@ -16,7 +26,7 @@ const FeaturedCars = () => {
           reviewcount={"2.436"}
           passengercount={"4 Passengers"}
           autospec={"Auto"}
-          airconspec={"Air Conditioning"}
+          airconspec={"Air Conditioned"}
           doorspec={"4 Doors"}
           price={"1,800"}
         />
@@ -27,7 +37,7 @@ const FeaturedCars = () => {
           reviewcount={"1.936"}
           passengercount={"2 Passengers"}
           autospec={"Auto"}
-          airconspec={"Air Conditioning"}
+          airconspec={"Air Conditioned"}
           doorspec={"2 Doors"}
           price={"2,100"}
         />
@@ -38,7 +48,7 @@ const FeaturedCars = () => {
           reviewcount={"2.036"}
           passengercount={"4 Passengers"}
           autospec={"Auto"}
-          airconspec={"Air Conditioning"}
+          airconspec={"Air Conditioned"}
           doorspec={"4 Doors"}
           price={"1,600"}
         />
@@ -49,7 +59,7 @@ const FeaturedCars = () => {
           reviewcount={"2.236"}
           passengercount={"2 Passengers"}
           autospec={"Auto"}
-          airconspec={"Air Conditioning"}
+          airconspec={"Air Conditioned"}
           doorspec={"2 Doors"}
           price={"2,300"}
         />

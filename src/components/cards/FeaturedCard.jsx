@@ -27,22 +27,24 @@ const FeaturedCard = ({
   price,
 }) => {
   return (
-    <div className="rounded-xl p-4 shadow-md xl:w-[95%]">
-      <img src={carImage} alt="" className="w-full md:h-[8rem]" />
+    <div className="rounded-xl p-4 shadow-md xl:w-[90%]">
       <div className="flex flex-col gap-6">
-        <div className="flex flex-col gap-1">
-          <p className="text-xl font-semibold">{model}</p>
-          <div className="flex items-center gap-2">
-            <img src={star} alt="" />
-            <p className="font-medium">
-              {starcount}{" "}
-              <span className="font-light text-gray-500">
-                ({reviewcount} reviews)
-              </span>
-            </p>
+        <img src={carImage} alt="" className="w-full md:h-[100px]" />
+        <div className="flex flex-col gap-6">
+          <div className="flex flex-col gap-1">
+            <p className="text-lg font-semibold">{model}</p>
+            <div className="flex items-center gap-2">
+              <img src={star} alt="" />
+              <p className="font-medium">
+                {starcount}{" "}
+                <span className="font-light text-gray-500">
+                  ({reviewcount} reviews)
+                </span>
+              </p>
+            </div>
           </div>
         </div>
-        <div className="grid grid-cols-2 gap-y-4 md:gap-x-2 lg:grid-cols-[2fr_1fr] lg:gap-x-0">
+        <div className="grid grid-cols-2 gap-x-6 gap-y-4 md:gap-x-2 lg:grid-cols-[2fr_1fr] lg:gap-x-0">
           <Carspecs image={user} spec={passengercount} />
           <Carspecs image={auto} spec={autospec} />
           <Carspecs image={aircon} spec={airconspec} />
@@ -56,7 +58,7 @@ const FeaturedCard = ({
               <span className="font-bold text-black">${price}</span> /day
             </p>
           </div>
-          <button className="flex w-full items-center justify-center gap-2 rounded-md bg-[var(--primary-color)] px-5 py-3 text-white">
+          <button className="flex w-full items-center justify-center gap-2 rounded-xl bg-[var(--primary-color)] px-5 py-3 text-white">
             Rent Now <img src={rightArrow} alt="" />
           </button>
         </div>

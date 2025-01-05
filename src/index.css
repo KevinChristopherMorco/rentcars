@@ -14,6 +14,7 @@
   --secondary-color: #ecf5ff;
   --background-color: #ffffff;
   --primary-hover-color: #3c94ec;
+  --footer-color: #051c34;
 }
 
 @layer base {
