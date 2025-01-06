@@ -8,7 +8,8 @@ import Header from "../components/partials/Header";
 import Footer from "../components/partials/Footer";
 
 const HomeLayout = () => {
-  const { isOpen, handleMenuToggle } = useToggleHamburger();
+  const { isOpen, isDelayed, handleMenuToggle } = useToggleHamburger();
+  console.log(isOpen && !isDelayed);
   return (
     <>
       <div className="flex grow p-5 lg:px-14 2xl:px-60">
@@ -16,7 +17,13 @@ const HomeLayout = () => {
         <main className="mt-20 flex grow flex-col gap-20">
           <Outlet />
         </main>
-        {isOpen && <HamburgerMenu handleMenuToggle={handleMenuToggle} />}
+        {isOpen && (
+          <HamburgerMenu
+            isDelayed={isDelayed}
+            isOpen={isOpen}
+            handleMenuToggle={handleMenuToggle}
+          />
+        )}
       </div>
       <Footer />
     </>

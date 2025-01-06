@@ -61,7 +61,7 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className="z-[999] flex flex-col gap-10 bg-[var(--footer-color)] px-5 py-12 md:grid md:grid-cols-2 lg:px-14 xl:grid-cols-[1fr_4fr] xl:gap-x-52 xl:gap-y-32 2xl:px-60">
+      <div className="z-[995] flex flex-col gap-10 bg-[var(--footer-color)] px-5 py-12 md:grid md:grid-cols-2 lg:px-14 xl:grid-cols-[1fr_4fr] xl:gap-x-52 xl:gap-y-32 2xl:px-60">
         <div className="col-span-2 flex flex-col gap-5 md:col-start-1 md:row-start-1 xl:col-span-1 xl:gap-10">
           <div className="flex items-center gap-x-4">
             <img

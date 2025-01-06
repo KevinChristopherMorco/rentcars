@@ -7,6 +7,7 @@ import frame from "../../assets/frame.png";
 import play from "../../assets/gplay.png";
 import line from "../../assets/line.png";
 import location from "../../assets/location.png";
+import { Link } from "react-router-dom";
 
 const Hero = () => {
   return (
@@ -71,15 +72,18 @@ const Hero = () => {
             </div>
           </div>
         </div>
-        <button className="cursor-pointer rounded-lg bg-[var(--primary-color)] p-2 font-medium text-white transition-colors hover:bg-[--primary-hover-color] md:px-10 md:py-1 2xl:text-lg">
+        <Link
+          to={"/page"}
+          className="flex cursor-pointer items-center justify-center rounded-lg bg-[var(--primary-color)] p-2 font-medium text-white transition-colors hover:bg-[--primary-hover-color] md:px-10 md:py-1 2xl:text-lg"
+        >
           Search
-        </button>
+        </Link>
       </div>
       <div className="relative -mx-5 flex flex-col md:items-center md:justify-center lg:-mr-20 2xl:-mr-72">
         <img
           src={frame}
           alt=""
-          className="absolute right-0 top-0 h-[350px] w-[90%] md:top-[10%] md:h-[400px] md:w-[85%]"
+          className="absolute right-0 top-0 z-[999] h-[350px] w-[90%] md:top-[10%] md:h-[400px] md:w-[85%] xl:-top-20 xl:h-[600px] 2xl:h-[700px] 2xl:w-[70%]"
         />
         <img
           src={car}

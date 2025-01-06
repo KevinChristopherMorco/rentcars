@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { RiCloseFill } from "@remixicon/react";
 
 import NavbarList from "../list/NavbarList";
@@ -7,10 +7,18 @@ import SignIn from "../buttons/SignIn";
 
 import logo from "../../assets/logo/frame.png";
 
-const HamburgerMenu = ({ handleMenuToggle }) => {
+const HamburgerMenu = ({ isOpen, isDelayed, handleMenuToggle }) => {
+  const handleClose = () => {
+    handleMenuToggle();
+  };
+
   return (
-    <div className="fixed right-0 top-0 z-[999] h-screen w-full bg-black bg-opacity-50">
-      <div className="fixed right-0 flex h-full w-[80%] flex-col gap-6 bg-white p-5">
+    <div
+      className={`fixed right-0 top-0 z-[1000] h-screen w-full bg-black bg-opacity-50`}
+    >
+      <div
+        className={`${isOpen && !isDelayed ? "animate-slide-in-right" : "animate-slide-in-left"} fixed right-0 flex h-full w-[80%] flex-col gap-6 bg-white p-5`}
+      >
         <div className="flex flex-col gap-2">
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-x-4">
@@ -19,7 +27,7 @@ const HamburgerMenu = ({ handleMenuToggle }) => {
                 RENTCARS
               </h5>
             </div>
-            <div className="cursor-pointer" onClick={handleMenuToggle}>
+            <div className="cursor-pointer" onClick={handleClose}>
               <RiCloseFill />
             </div>
           </div>

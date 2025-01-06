@@ -43,7 +43,7 @@ const Steps = () => {
         <h4 className="text-lg font-medium text-gray-700 2xl:text-xl">
           As Seen & Trusted by Leading Brands
         </h4>
-        <div className="flex flex-wrap items-center justify-center gap-x-6 gap-y-8 xl:gap-x-10">
+        <div className="flex flex-wrap items-center justify-center gap-x-6 gap-y-8 lg:gap-x-10 xl:justify-between 2xl:gap-x-24">
           <img
             src={honda}
             alt=""

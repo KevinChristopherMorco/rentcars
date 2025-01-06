@@ -9,12 +9,12 @@ import audi from "../../assets/cars/audi-r8.png";
 
 const Service = () => {
   return (
-    <section className="grid lg:grid-cols-2">
-      <div className="relative md:justify-items-center lg:justify-items-start lg:self-center">
+    <section className="grid gap-10 lg:grid-cols-2 lg:gap-0">
+      <div className="relative justify-items-center lg:justify-items-start lg:self-center">
         <img
           src={audi}
           alt=""
-          className="top-[50%] w-[70%] md:h-[300px] lg:absolute lg:-left-32 lg:w-full lg:-translate-y-[50%] xl:-left-48 2xl:-left-72 2xl:h-[450px] 2xl:w-[2000px]"
+          className="top-[50%] md:h-[300px] lg:absolute lg:-left-32 lg:w-[70%] lg:w-full lg:-translate-y-[50%] xl:-left-48 2xl:-left-72 2xl:h-[450px] 2xl:w-[2000px]"
         />
       </div>
       <div className="flex flex-col items-center gap-8">

@@ -5,6 +5,7 @@ import auto from "../../assets/auto.png";
 import aircon from "../../assets/aircon.png";
 import doors from "../../assets/doors.png";
 import rightArrow from "../../assets/arrow-right.png";
+import { Link } from "react-router-dom";
 
 const Carspecs = ({ image, spec }) => {
   return (
@@ -29,7 +30,7 @@ const FeaturedCard = ({
   return (
     <div className="rounded-xl p-4 shadow-md xl:w-[90%]">
       <div className="flex flex-col gap-6">
-        <img src={carImage} alt="" className="w-full md:h-[100px]" />
+        <img src={carImage} alt="" className="w-full md:h-[120px]" />
         <div className="flex flex-col gap-6">
           <div className="flex flex-col gap-1">
             <p className="text-lg font-semibold">{model}</p>
@@ -58,9 +59,12 @@ const FeaturedCard = ({
               <span className="font-bold text-black">${price}</span> /day
             </p>
           </div>
-          <button className="flex w-full items-center justify-center gap-2 rounded-xl bg-[var(--primary-color)] px-5 py-3 text-white">
+          <Link
+            to={"/page"}
+            className="flex w-full items-center justify-center gap-2 rounded-xl bg-[var(--primary-color)] px-5 py-3 text-white transition-colors hover:bg-[--primary-hover-color]"
+          >
             Rent Now <img src={rightArrow} alt="" />
-          </button>
+          </Link>
         </div>
       </div>
     </div>
