@@ -83,7 +83,7 @@ const Hero = () => {
         <img
           src={frame}
           alt=""
-          className="absolute right-0 top-0 z-[999] h-[350px] w-[90%] md:top-[10%] md:h-[400px] md:w-[85%] xl:-top-20 xl:h-[600px] 2xl:h-[700px] 2xl:w-[70%]"
+          className="absolute right-0 top-0 h-[350px] w-[90%] md:-top-[10%] md:h-[420px] md:w-[85%] lg:-top-16 lg:h-[460px] xl:-top-20 xl:h-[600px] 2xl:h-[700px] 2xl:w-[70%]"
         />
         <img
           src={car}

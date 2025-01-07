@@ -9,7 +9,6 @@ import Footer from "../components/partials/Footer";
 
 const HomeLayout = () => {
   const { isOpen, isDelayed, handleMenuToggle } = useToggleHamburger();
-  console.log(isOpen && !isDelayed);
   return (
     <>
       <div className="flex grow p-5 lg:px-14 2xl:px-60">

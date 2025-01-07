@@ -6,6 +6,7 @@ import usertick from "../../assets/user-tick.png";
 import support from "../../assets/24-support.png";
 import messages from "../../assets/messages-2.png";
 import audi from "../../assets/cars/audi-r8.png";
+import vector from "../../assets/vector.png";
 
 const Service = () => {
   return (
@@ -14,7 +15,12 @@ const Service = () => {
         <img
           src={audi}
           alt=""
-          className="top-[50%] md:h-[300px] lg:absolute lg:-left-32 lg:w-[70%] lg:w-full lg:-translate-y-[50%] xl:-left-48 2xl:-left-72 2xl:h-[450px] 2xl:w-[2000px]"
+          className="top-[50%] z-[900] md:h-[300px] lg:absolute lg:-left-32 lg:w-[70%] lg:w-full lg:-translate-y-[50%] xl:-left-48 2xl:-left-72 2xl:h-[450px] 2xl:w-[2000px]"
+        />
+        <img
+          src={vector}
+          alt=""
+          className="absolute -top-[30%] lg:-left-20 lg:-top-52 lg:h-[500px] 2xl:-left-72 2xl:-top-80 2xl:h-[700px]"
         />
       </div>
       <div className="flex flex-col items-center gap-8">
